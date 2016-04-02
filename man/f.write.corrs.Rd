@@ -34,7 +34,7 @@ random.normal = matrix(rnorm(dim(U)[1]*100,0,1), nrow=dim(U)[1], ncol=100);
 X = as.data.frame(t(U \%*\% random.normal))
 corrs = corr.test(X)
 f.write.corrs(s.name='example',obj.corrs=corrs)
-f.write.corrs(s.name='example',obj.corrs=corrs,p.val.2=FALSE)
+f.write.corrs(f.name='example.xlsx',s.name='example',obj.corrs=corrs,p.val.2=FALSE)
 }
 \author{
 Adam Meade \email{awmeade@ncsu.edu}

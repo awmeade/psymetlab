@@ -3,3 +3,5 @@
 export(f.corstar)
 export(f.get.reg.output)
 export(f.write.corrs)
+import(psych)
+import(xlsx)

@@ -8,3 +8,5 @@ Depends:
 License: General Public License >= 3.0
 LazyData: true
 RoxygenNote: 5.0.1
+Imports: psych, xlsx
+

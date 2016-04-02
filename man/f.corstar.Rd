@@ -23,12 +23,12 @@ Uses an output object from the Psych package and adds 1 or 2 askterisks (stars) 
 correlation for APA table output. Returns object as dataframe.
 }
 \examples{
-library('psych')
 R = matrix(cbind(1,.80,.2,.80,1,.7,.2,.7,1),nrow=3)
 U = t(chol(R))
 set.seed(1)
 random.normal = matrix(rnorm(dim(U)[1]*100,0,1), nrow=dim(U)[1], ncol=100);
 X = as.data.frame(t(U \%*\% random.normal))
+require('psych')
 corrs.1 = corr.test(X)
 f.corstar(corrs.1)
 f.corstar(corrs.1, p.val.1 = .01, p.val.2 = FALSE)

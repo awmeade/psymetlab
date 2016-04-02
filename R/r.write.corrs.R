@@ -13,6 +13,7 @@
 #' @param ... parameters passed to the f.starcor function
 #' 
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
+#' @import xlsx
 #' @export 
 #' @examples
 #' library('psych')
@@ -23,7 +24,7 @@
 #' X = as.data.frame(t(U %*% random.normal))
 #' corrs = corr.test(X)
 #' f.write.corrs(s.name='example',obj.corrs=corrs)
-#' f.write.corrs(s.name='example',obj.corrs=corrs,p.val.2=FALSE)
+#' f.write.corrs(f.name='example.xlsx',s.name='example',obj.corrs=corrs,p.val.2=FALSE)
 
 f.write.corrs <- local(function(f.name = 'output.xlsx', s.name, obj.corrs, 
                                 print.p = TRUE, print.n = TRUE, ...){
