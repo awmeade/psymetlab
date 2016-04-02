@@ -1,10 +1,10 @@
 Package: psymetlab
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Title: Provides useful functions for APA formatting and writing output to Excel
+Version: 1.0.0
+Authors@R: person("Adam", "Meade", email = "awmeade@ncsu.edu", role = c("aut", "cre"))
+Description: Package includes a variety of functions to tag significant correlations, write data to excel, etc.
 Depends:
     R (>= 3.1.3)
-License: What license is it under?
+License: General Public License >= 3.0
 LazyData: true
 RoxygenNote: 5.0.1
