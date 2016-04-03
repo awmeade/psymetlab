@@ -18,7 +18,7 @@ f.write.corrs(f.name = "output.xlsx", s.name, obj.corrs, print.p = TRUE,
 
 \item{print.n}{requests printing of sample size (n). default = TRUE}
 
-\item{...}{parameters passed to the f.starcor function}
+\item{...}{parameters passed to the f.corstar function}
 }
 \description{
 Uses an output object from the Psych package and adds 1 or 2 askterisks (stars) to the 

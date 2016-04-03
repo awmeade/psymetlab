@@ -10,7 +10,7 @@
 #' @param obj.corrs is the correlation object from the corr.test function in the Psych package
 #' @param print.p requests printing of p values. default = TRUE
 #' @param print.n requests printing of sample size (n). default = TRUE
-#' @param ... parameters passed to the f.starcor function
+#' @param ... parameters passed to the f.corstar function
 #' 
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
 #' @import xlsx
