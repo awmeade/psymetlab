@@ -2,6 +2,7 @@
 
 export(f.corstar)
 export(f.get.reg.output)
+export(f.screen.outliers)
 export(f.write.corrs)
 import(psych)
 import(xlsx)
