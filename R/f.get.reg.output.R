@@ -20,9 +20,9 @@ f.get.reg.output <- local(function(out.lm){
   p <- round(pf(f[1],f[2],f[3],lower.tail=F),3)
   r2 <- round(summary(out.lm)$r.squared,2)
   r <- round(sqrt(r2),2)
-  r2.adj < - round(summary(out.lm)$adj.r.squared,2)
+  r2.adj <- round(summary(out.lm)$adj.r.squared,2)
   f.stats <- rbind(f,p,r,r2,r2.adj)
-  x <- matrix(NA, ncol = ncol(coef), nrow = 6)
+  x <- matrix(NA, ncol = ncol(coef), nrow = 7)
   x[,1] <- f.stats
   row.names(x) <- c("F value","df1","df2","p","r","r-sq","adj.r-sq")
   return.me <- rbind(coef,x)
