@@ -16,15 +16,11 @@
 #' @import xlsx
 #' @export 
 #' @examples
-#' library('psych')
-#' R = matrix(cbind(1,.80,.2,.80,1,.7,.2,.7,1),nrow=3)
-#' U = t(chol(R))
-#' set.seed(1)
-#' random.normal = matrix(rnorm(dim(U)[1]*100,0,1), nrow=dim(U)[1], ncol=100);
-#' X = as.data.frame(t(U %*% random.normal))
-#' corrs = corr.test(X)
+#' \dontrun{
+#' corrs = corr.test(sat.act)
 #' f.write.corrs(s.name='example',obj.corrs=corrs)
 #' f.write.corrs(f.name='example.xlsx',s.name='example',obj.corrs=corrs,p.val.2=FALSE)
+#' }
 
 f.write.corrs <- local(function(f.name = 'output.xlsx', s.name, obj.corrs, 
                                 print.p = TRUE, print.n = TRUE, ...){

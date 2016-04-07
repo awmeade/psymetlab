@@ -12,9 +12,11 @@
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
 #' @export 
 #' @examples
+#' \dontrun{
 #' nrow(trees)
 #' new.data <- f.screen.outliers(trees)
 #' nrow(new.data)
+#' }
 
 f.screen.outliers <- local(function(all.data, screening.vars = NULL, p.val = .05){
   p.val = 1 - p.val

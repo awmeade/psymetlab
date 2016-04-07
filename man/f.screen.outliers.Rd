@@ -20,9 +20,11 @@ returns a dataframe that is a subset of the original all.data dataframe based on
 chi-square values.
 }
 \examples{
+\dontrun{
 nrow(trees)
 new.data <- f.screen.outliers(trees)
 nrow(new.data)
+}
 }
 \author{
 Adam Meade \email{awmeade@ncsu.edu}

@@ -8,13 +8,10 @@
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
 #' @export 
 #' @examples
-#' R = matrix(cbind(1,.80,.2,.80,1,.7,.2,.7,1),nrow=3)
-#' U = t(chol(R))
-#' set.seed(1)
-#' random.normal <- matrix(rnorm(dim(U)[1]*100,0,1), nrow=dim(U)[1], ncol=100);
-#' X <- as.data.frame(t(U %*% random.normal))
-#' model.out <- lm(X[,1]~X[,2]+X[,3])
+#' \dontrun{
+#' model.out <- lm(sat.act[,1]~sat.act[,2]+sat.act[,3])
 #' f.get.reg.output(model.out)
+#' }
 f.get.reg.output <- local(function(out.lm){
   the.model <- summary(out.lm)$call
   get.model <- toString(the.model)
@@ -23,10 +20,11 @@ f.get.reg.output <- local(function(out.lm){
   p <- round(pf(f[1],f[2],f[3],lower.tail=F),3)
   r2 <- round(summary(out.lm)$r.squared,2)
   r <- round(sqrt(r2),2)
-  f.stats <- rbind(f,p,r2,r)
+  r2.adj < - round(summary(out.lm)$adj.r.squared,2)
+  f.stats <- rbind(f,p,r,r2,r2.adj)
   x <- matrix(NA, ncol = ncol(coef), nrow = 6)
   x[,1] <- f.stats
-  row.names(x) <- c("F value","df1","df2","p","r-sq","r")
+  row.names(x) <- c("F value","df1","df2","p","r","r-sq","adj.r-sq")
   return.me <- rbind(coef,x)
   return.me <- cbind(return.me,get.model)
   return(return.me)

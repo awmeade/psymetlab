@@ -14,13 +14,10 @@ Returns a dataframe with predictors and coefficients listed along with model sta
 F,df,p, and r-squred values.
 }
 \examples{
-R = matrix(cbind(1,.80,.2,.80,1,.7,.2,.7,1),nrow=3)
-U = t(chol(R))
-set.seed(1)
-random.normal <- matrix(rnorm(dim(U)[1]*100,0,1), nrow=dim(U)[1], ncol=100);
-X <- as.data.frame(t(U \%*\% random.normal))
-model.out <- lm(X[,1]~X[,2]+X[,3])
+\dontrun{
+model.out <- lm(sat.act[,1]~sat.act[,2]+sat.act[,3])
 f.get.reg.output(model.out)
+}
 }
 \author{
 Adam Meade \email{awmeade@ncsu.edu}
