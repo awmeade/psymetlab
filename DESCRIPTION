@@ -1,6 +1,6 @@
 Package: psymetlab
 Title: Provides useful functions for APA formatting and writing output to Excel
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: person("Adam", "Meade", email = "awmeade@ncsu.edu", role = c("aut", "cre"))
 Description: Package includes a variety of functions to tag significant correlations, write data to excel, etc.
 Depends:
