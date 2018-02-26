@@ -29,4 +29,3 @@ nrow(new.data)
 \author{
 Adam Meade \email{awmeade@ncsu.edu}
 }
-

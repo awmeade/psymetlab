@@ -35,4 +35,3 @@ f.write.corrs(f.name='example.xlsx',s.name='example',obj.corrs=corrs,p.val.2=FAL
 \author{
 Adam Meade \email{awmeade@ncsu.edu}
 }
-

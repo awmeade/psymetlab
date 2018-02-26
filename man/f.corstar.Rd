@@ -35,4 +35,3 @@ require('psych')
 \author{
 Adam Meade \email{awmeade@ncsu.edu}
 }
-

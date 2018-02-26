@@ -22,4 +22,3 @@ f.get.reg.output(model.out)
 \author{
 Adam Meade \email{awmeade@ncsu.edu}
 }
-
