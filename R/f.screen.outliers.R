@@ -5,7 +5,7 @@
 #' returns a dataframe that is a subset of the original all.data dataframe based on non-significant 
 #' chi-square values.
 #'
-#' @param add.data is the database from which to remove outliers
+#' @param all.data is the database from which to remove outliers
 #' @param screening.vars is an optional array of variable names on which the screening should be based.
 #   default is to use all variables in the database for screening.
 #' @param p.val is the cutoff value of the chi-square distribution to use. default is .05.
