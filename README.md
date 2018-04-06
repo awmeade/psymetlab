@@ -21,7 +21,7 @@ install.packages('devtools')
 library('devtools')
 ```
 
-3) Download and install the `psymetlab` package from the Github source code.
+2) Download and install the `psymetlab` package from the Github source code.
 
 ```r
 install_github('awmeade/psymetlab')
