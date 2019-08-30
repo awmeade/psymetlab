@@ -4,8 +4,8 @@
 \alias{f.write.corrs}
 \title{Formats in APA format and writes correlation matrices to an excel sheet}
 \usage{
-f.write.corrs(f.name = "output.xlsx", s.name, obj.corrs, print.p = TRUE,
-  print.n = TRUE, ...)
+f.write.corrs(f.name = "output.xlsx", s.name, obj.corrs,
+  print.p = TRUE, print.n = TRUE, ...)
 }
 \arguments{
 \item{f.name}{is the file name to which to write the data. default = 'output.xlsx'}

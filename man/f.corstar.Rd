@@ -4,7 +4,8 @@
 \alias{f.corstar}
 \title{Add asterisk(s) to significant correlations}
 \usage{
-f.corstar(corr.obj, is.triangle = TRUE, p.val.1 = 0.05, p.val.2 = 0.01)
+f.corstar(corr.obj, is.triangle = TRUE, p.val.1 = 0.05,
+  p.val.2 = 0.01)
 }
 \arguments{
 \item{corr.obj}{is the output list object from the corr.test function in the Psych package}

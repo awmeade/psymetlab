@@ -7,11 +7,11 @@
 f.screen.outliers(all.data, screening.vars = NULL, p.val = 0.05)
 }
 \arguments{
+\item{all.data}{is the database from which to remove outliers}
+
 \item{screening.vars}{is an optional array of variable names on which the screening should be based.}
 
 \item{p.val}{is the cutoff value of the chi-square distribution to use. default is .05.}
-
-\item{add.data}{is the database from which to remove outliers}
 }
 \description{
 Accepts a dataframe and optional list of variables within that dataframe for which to screen the data.

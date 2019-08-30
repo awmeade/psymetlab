@@ -8,7 +8,7 @@ psymetlab is a package created at the NCSU Psychometrics Lab with useful functio
 
 ## Current Version
 
-Current version is 1.0.0
+Current version is 1.1.0 (08.30.2019)
 
 ## Installing from source
 
