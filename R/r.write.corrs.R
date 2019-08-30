@@ -13,7 +13,7 @@
 #' @param ... parameters passed to the f.corstar function
 #' 
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
-#' @import xlsx
+#' @importFrom xlsx write.xlsx
 #' @export 
 #' @examples
 #' \dontrun{

@@ -13,7 +13,6 @@
 #' no second astrisk is desired
 #'
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
-#' @import psych
 #' @export 
 #' @examples
 #' \dontrun{

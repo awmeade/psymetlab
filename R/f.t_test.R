@@ -8,8 +8,8 @@
 #' @param df2 is the minority group dataframe
 #'
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
-#' @import psych
-#' @import effsize
+#' @importFrom psych describe
+#' @importFrom effsize cohen.d
 
 #' @export 
 #' @examples

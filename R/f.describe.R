@@ -6,7 +6,7 @@
 #' @param f.d is the dataframe object
 #'
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
-#' @import psych
+#' @importFrom psych describe
 #' @export
 #' @examples
 #' \dontrun{
