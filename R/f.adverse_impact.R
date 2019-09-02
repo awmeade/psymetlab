@@ -71,7 +71,6 @@ f.adverse_impact <- function(d.group, d.pass, majority.group, min_percent_minori
   
   #shortfall
   shortfall <-  ceiling(minority.n*SR.total - sum(d.minority.pass))  
-  shortfall <- ifelse(shortfall < 0, NA, shortfall)
   
   out.table <- data.frame(cbind(total.n, majority.n, minority.n, percent.minority,
                                 SR.total, SR.majority, SR.minority, impact.ratio,
