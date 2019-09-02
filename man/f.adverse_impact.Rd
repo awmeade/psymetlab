@@ -8,13 +8,13 @@ f.adverse_impact(d.group, d.pass, majority.group,
   min_percent_minority = 0.05)
 }
 \arguments{
+\item{d.group}{is a vector of grouping variable values}
+
+\item{d.pass}{is a vector of outcome values}
+
 \item{majority.group}{is the label of value assigned to the majority group}
 
 \item{min_percent_minority}{is the minimum percent of the sample that must be in the minorty group in order to report results}
-
-\item{f.group}{is a vector of grouping variable values}
-
-\item{f.pass}{is a vector of outcome values}
 }
 \value{
 Returns a dataframe with columns...

@@ -3,8 +3,8 @@
 #' Accepts grouping vector d.group, vector of outcome (e.g., pass/fail) as d.pass, 
 #' and value for majority group (e.g., "male"), assumes only two groups
 #'
-#' @param f.group is a vector of grouping variable values
-#' @param f.pass is a vector of outcome values
+#' @param d.group is a vector of grouping variable values
+#' @param d.pass is a vector of outcome values
 #' @param majority.group is the label of value assigned to the majority group
 #' @param min_percent_minority is the minimum percent of the sample that must be in the minorty group in order to report results
 #' @return Returns a dataframe with columns... 
@@ -70,7 +70,7 @@ f.adverse_impact <- function(d.group, d.pass, majority.group, min_percent_minori
   upper_95CI <- round(upper_95CI, 3)
   
   #shortfall
-  shortfall <-  (minority.n*SR.total - sum(d.minority.pass))  #female pass
+  shortfall <-  ceiling(minority.n*SR.total - sum(d.minority.pass))  
   shortfall <- ifelse(shortfall < 0, NA, shortfall)
   
   out.table <- data.frame(cbind(total.n, majority.n, minority.n, percent.minority,
