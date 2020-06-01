@@ -19,7 +19,7 @@
 #' @return fishers.p = p value of the Fisher Exact Test
 #' @return SD2.test = results of the 2 Standard Deviation Test
 #' @return lower_95CI, upper_95CI = lower and upper cofidence intervals around SD2.test
-#' @return shortfall = the number of additional minority group members needed to pass to have a selection ratio = 1
+#' @return shortfall = the number of additional minority group members needed to pass to have an impact ratio = 1
 #' @author Adam Meade \email{awmeade@@ncsu.edu}
 #' @export
 #' @examples
