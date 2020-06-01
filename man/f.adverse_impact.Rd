@@ -4,8 +4,7 @@
 \alias{f.adverse_impact}
 \title{Compute adverse impact statistics}
 \usage{
-f.adverse_impact(d.group, d.pass, majority.group,
-  min_percent_minority = 0.05)
+f.adverse_impact(d.group, d.pass, majority.group, min_percent_minority = 0.05)
 }
 \arguments{
 \item{d.group}{is a vector of grouping variable values}
@@ -41,7 +40,7 @@ SD2.test = results of the 2 Standard Deviation Test
 
 lower_95CI, upper_95CI = lower and upper cofidence intervals around SD2.test
 
-shortfall = the number of additional minority group members needed to pass to have a selection ratio = 1
+shortfall = the number of additional minority group members needed to pass to have an impact ratio = 1
 }
 \description{
 Accepts grouping vector d.group, vector of outcome (e.g., pass/fail) as d.pass, 
