@@ -4,7 +4,13 @@
 \alias{f.adverse_impact}
 \title{Compute adverse impact statistics}
 \usage{
-f.adverse_impact(d.group, d.pass, majority.group, min_percent_minority = 0.05)
+f.adverse_impact(
+  d.group,
+  d.pass,
+  majority.group,
+  minority.group,
+  min_percent_minority = 0.05
+)
 }
 \arguments{
 \item{d.group}{is a vector of grouping variable values}
@@ -13,7 +19,7 @@ f.adverse_impact(d.group, d.pass, majority.group, min_percent_minority = 0.05)
 
 \item{majority.group}{is the label of value assigned to the majority group}
 
-\item{min_percent_minority}{is the minimum percent of the sample that must be in the minorty group in order to report results}
+\item{min_percent_minority}{is the minimum percent of the sample that must be in the minority group in order to report results}
 }
 \value{
 Returns a dataframe with columns...
@@ -38,7 +44,7 @@ fishers.p = p value of the Fisher Exact Test
 
 SD2.test = results of the 2 Standard Deviation Test
 
-lower_95CI, upper_95CI = lower and upper cofidence intervals around SD2.test
+lower_95CI, upper_95CI = lower and upper confidence intervals around Impact Ratio
 
 shortfall = the number of additional minority group members needed to pass to have an impact ratio = 1
 }

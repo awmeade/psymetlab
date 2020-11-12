@@ -15,7 +15,7 @@
 #'  }
 
 f.describe <- function(f.d){
-  f.table <- describe(f.d)
+  f.table <- psych::describe(f.d)
   f.keep.cols <- c("n","mean","sd","min","max","skew")
   f.out <- f.table[f.keep.cols]
   f.out <- round(f.out,2)
