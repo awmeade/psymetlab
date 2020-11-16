@@ -56,7 +56,7 @@ and value for majority group (e.g., "male"), assumes only two groups
 require('psych')
 pass <- ifelse(sat.act$ACT > mean(sat.act$ACT) , 1, 0)
 table(sat.act$gender)
-f.adverse_impact(sat.act$gender, pass, majority.group = 2)
+f.adverse_impact(sat.act$gender, pass, majority.group = 2, minority.group = 1)
 }
 \author{
 Adam Meade \email{awmeade@ncsu.edu}

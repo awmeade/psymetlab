@@ -47,11 +47,11 @@ f.t_test <- local(function(df1, df2){
   rm(i,out.i,temp.out)
   out.table
   
-  out.table[11] <- .05/ncol(d.ps)
+  out.table[11] <- .05/ncol(df1)
   
   colnames(out.table) <- c("Mean Majority","SD Majority","N Majority","Mean Minority","SD Minority",
                            "N Minority","cohens.d","t","df","p","Bon Ferroni Critical P")
-  row.names(out.table)<-names(d.ps)
+  row.names(out.table)<-names(df1)
   
   out.table <- round(out.table,digits=3)
   return(out.table)
